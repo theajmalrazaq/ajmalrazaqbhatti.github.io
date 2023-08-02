@@ -1,0 +1,33 @@
+@use "fonts" as *;
+@use "breakpoints" as *;
+footer {
+  width: 100%;
+  margin: 0 40px;
+  position: relative;
+  bottom: 30px;
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+      font-family: $font-tertiary;
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--color-white);
+    }
+    .social {
+      width: 300px;
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: var(--color-white);
+          font-family: $font-tertiary;
+        }
+      }
+    }
+  }
+}

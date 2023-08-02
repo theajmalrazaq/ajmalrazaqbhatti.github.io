@@ -1,0 +1,28 @@
+<svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="44"
+        height="44"
+        fill="none"
+      >
+        <style>
+          @keyframes mouse {
+            0% {
+              transform: translateY(-1px);
+            }
+            to {
+              transform: translateY(1px);
+            }
+          }
+        </style>
+        <rect width="8" height="14" x="8" y="5" stroke="white" rx="4" />
+        <rect
+          width="1.5"
+          height="3"
+          x="11.25"
+          y="8.703"
+          fill="#99cc00"
+          rx=".75"
+          style="animation: mouse 1s linear infinite alternate both"
+        />
+      </svg>

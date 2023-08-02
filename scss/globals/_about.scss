@@ -1,0 +1,120 @@
+@use "fonts" as *;
+@use "breakpoints" as *;
+.sectionabout {
+  width: 85%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(900px) {
+    width: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+  }
+  &__who {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      color: var(--color-white);
+      font-family: $font-tetra;
+
+      @include breakpoint(900px) {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    p {
+      margin: 20px 0px;
+      max-width: 600px;
+      font-family: $font-tertiary;
+      color: var(--color-grey);
+      text-transform: capitalize;
+      font-size: 16px;
+      span {
+        color: var(--color-red);
+      }
+      @include breakpoint(900px) {
+        font-size: 14px;
+      }
+    }
+  }
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0px 0px 80px 0px;
+    .skill__text {
+      margin: 20px 0px;
+      max-width: 600px;
+      font-family: $font-tertiary;
+      color: var(--color-grey);
+      text-transform: capitalize;
+      font-size: 16px;
+      text-align: center;
+      @include breakpoint(900px) {
+        font-size: 14px;
+      }
+    }
+    h1 {
+      color: var(--color-white);
+      font-family: $font-tetra;
+      text-align: center;
+      @include breakpoint(900px) {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      @include breakpoint(900px) {
+        justify-content: flex-start;
+      }
+      .skill {
+        align-items: flex-start;
+        width: 300px;
+        padding: 20px;
+        border-radius: 16px;
+        transition-duration: 0.2s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        cursor: pointer;
+        z-index: 9999;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+        h3 {
+          font-family: $font-tetra;
+          color: var(--color-red);
+          font-weight: 400;
+        }
+        p {
+          color: var(--color-grey);
+          font-family: $font-tertiary;
+          font-size: 14px;
+          span {
+            color: var(--color-red);
+          }
+        }
+      }
+    }
+  }
+}

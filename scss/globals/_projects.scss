@@ -1,0 +1,374 @@
+@use "breakpoints" as *;
+@use "fonts" as *;
+.projectssection {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 85%;
+  margin: 0px auto 30px auto;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+    &__intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        text-align: center;
+        color: var(--color-white);
+        font-family: $font-tetra;
+
+        @include breakpoint(900px) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+
+      p {
+        margin: 20px 0px;
+        max-width: 600px;
+        font-family: $font-tertiary;
+        text-align: center;
+        color: var(--color-grey);
+        text-transform: capitalize;
+        font-size: 16px;
+        span {
+          color: var(--color-red);
+        }
+        @include breakpoint(900px) {
+          font-size: 14px;
+        }
+      }
+      a {
+        background: transparent;
+        height: 30px;
+        padding: 20px;
+        background-color: var(--color-red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 35px;
+        color: var(--color-dark);
+        text-decoration: none;
+        transition-duration: 0.2s;
+        font-size: 15px;
+        font-family: $font-tertiary;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+          background: var(--color-white);
+          color: var(--color-dark);
+          padding: 20px 25px;
+        }
+      }
+    }
+    &__projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      &__one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 420px;
+        width: 300px;
+        border: $border;
+        border-radius: 35px;
+        .mockup {
+          width: 255px;
+          height: 150px;
+          border-radius: 25px;
+          overflow: hidden;
+          background-color: rgb(255, 255, 255, 0.2);
+          backdrop-filter: blur(60px);
+          display: flex;
+          justify-content: flex-end;
+          cursor: pointer;
+          transition-duration: 0.2s;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover {
+            color: var(--color-dark);
+            opacity: 0.3;
+          }
+
+          img {
+            height: 300px;
+            position: relative;
+            top: 20px;
+            left: -43px;
+            transform: rotate(15deg);
+          }
+        }
+        &__lower {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 20px;
+          align-self: flex-start;
+          gap: 5px;
+          .icon {
+            img {
+              height: 30px;
+            }
+          }
+          .name {
+            font-family: $font-tetra;
+            font-size: 18px;
+            color: var(--color-white);
+          }
+          .caption {
+            font-family: $font-tertiary;
+            font-size: 14px;
+            color: var(--color-grey);
+          }
+          .stats {
+            margin-top: 5px;
+            width: 200px;
+            display: flex;
+            height: 20px;
+            .js {
+              width: 42.9%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: var(--color-red);
+            }
+            .css {
+              width: 28.9%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: rgb(255, 255, 255);
+            }
+            .html {
+              width: 28.2%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: var(--color-red);
+            }
+          }
+        }
+        &__buttons {
+          align-self: flex-start;
+          display: flex;
+          gap: 30px;
+          margin: 0px 20px;
+          .btn_one {
+            display: flex;
+            cursor: pointer;
+            background-color: transparent;
+            border: $border;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            height: 40px;
+            color: var(--color-dark);
+            border-radius: 99px;
+            font-size: 16px;
+            width: 40px;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+              color: var(--color-dark);
+              transform: scale(1.1);
+              background: var(--color-dark);
+            }
+          }
+          .btn_two {
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            top: 2px;
+            border-radius: 99px;
+            border: none;
+            outline: none;
+            height: 40px;
+            height: 40px;
+            font-size: 16px;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+              color: var(--color-dark);
+              transform: scale(1.1);
+              background: var(--color-dark);
+            }
+          }
+        }
+      }
+      &__two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 420px;
+        width: 300px;
+        border: $border;
+        border-radius: 35px;
+        .mockup {
+          width: 255px;
+          height: 150px;
+          border-radius: 25px;
+          overflow: hidden;
+          background-color: rgb(255, 255, 255, 0.2);
+          backdrop-filter: blur(60px);
+          display: flex;
+          justify-content: flex-end;
+          cursor: pointer;
+          transition-duration: 0.2s;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover {
+            color: var(--color-dark);
+            opacity: 0.3;
+          }
+
+          img {
+            height: 300px;
+            position: relative;
+            top: 20px;
+            left: -43px;
+            transform: rotate(15deg);
+          }
+        }
+        &__lower {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 20px;
+          align-self: flex-start;
+          gap: 5px;
+          .icon {
+            img {
+              height: 30px;
+            }
+          }
+          .name {
+            font-family: $font-tetra;
+            font-size: 18px;
+            color: var(--color-white);
+          }
+          .caption {
+            font-family: $font-tertiary;
+            font-size: 14px;
+            color: var(--color-grey);
+          }
+          .stats {
+            margin-top: 5px;
+            width: 200px;
+            display: flex;
+            height: 20px;
+            .js {
+              width: 22%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: var(--color-white);
+            }
+            .css {
+              width: 23.3%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: var(--color-red);
+            }
+            .html {
+              width: 28.7%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: var(--color-red);
+            }
+            .scss {
+              width: 26%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: var(--color-dark);
+              font-family: $font-tertiary;
+              background: var(--color-white);
+            }
+          }
+        }
+        &__buttons {
+          align-self: flex-start;
+          display: flex;
+          gap: 30px;
+          margin: 0px 20px;
+          .btn_one {
+            cursor: pointer;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: $border;
+            outline: none;
+            height: 40px;
+            color: var(--color-dark);
+            border-radius: 99px;
+            font-size: 16px;
+            width: 40px;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+              color: var(--color-dark);
+              transform: scale(1.1);
+              background: #111111;
+            }
+          }
+          .btn_two {
+            cursor: pointer;
+            background: transparent;
+            color: var(--color-white);
+            position: relative;
+            top: 2px;
+            border-radius: 99px;
+            border: none;
+            outline: none;
+            height: 40px;
+            height: 40px;
+            font-size: 16px;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+              color: var(--color-dark);
+              transform: scale(1.1);
+              background: var(--color-dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
