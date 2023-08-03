@@ -143,6 +143,8 @@ header {
 }
 .headerwrapper__title__links a {
   text-decoration: none;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .headerwrapper__title__links a:hover {
   filter: saturate(0);
