@@ -792,33 +792,37 @@ header {
 }
 
 footer {
-  width: 100%;
-  margin: 0 40px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 0px 40px;
   position: relative;
-  bottom: 30px;
+  display: flex;
+  bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 footer .footer__wrapper {
   display: flex;
-  justify-content: space-around;
+  margin-top: 20px;
   align-items: center;
+  justify-content: center;
 }
 footer .footer__wrapper h2 {
   font-family: "Product Sans";
   font-weight: 400;
   font-size: 16px;
   color: var(--color-white);
+  text-transform: capitalize;
+  font-size: 16px;
 }
-footer .footer__wrapper .social {
-  width: 300px;
-}
-footer .footer__wrapper .social ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  align-items: center;
-}
-footer .footer__wrapper .social ul a {
+footer .footer__wrapper h2 a {
   text-decoration: none;
   color: var(--color-white);
-  font-family: "Product Sans";
+}
+footer .footer__wrapper h2 a:hover {
+  color: var(--color-red);
+}
+@media (max-width: 900px) {
+  footer .footer__wrapper h2 {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
