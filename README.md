@@ -1,7 +1,9 @@
 
 # Portfolio Website
 
-<img src="https://theajmalrazaq.github.io/assest/ajmal.svg" height="200px"/>
+<img src="https://theajmalrazaq.github.io/assest/ajmal.svg" height="170px"/>
+
+## Ajmal Razaq Bhatti
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences in a clean and visually appealing manner. The website is built using HTML, CSS, JavaScript, and SCSS to provide a responsive and interactive user experience.
 
