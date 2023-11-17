@@ -1,7 +1,7 @@
 
 # Portfolio Website
 
-![P[ortfolio Website](url_to_your_portfolio_image)](https://theajmalrazaq.github.io/assest/ajmal.svg)
+<img src="https://theajmalrazaq.github.io/assest/ajmal.svg" height="200px"/>
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences in a clean and visually appealing manner. The website is built using HTML, CSS, JavaScript, and SCSS to provide a responsive and interactive user experience.
 
