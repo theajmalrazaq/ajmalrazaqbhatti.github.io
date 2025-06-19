@@ -1,0 +1,32 @@
+<svg width="1440" height="885" viewBox="0 0 1440 885" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_78_83)">
+<path d="M1162 442.5C1162 325.142 1115.38 212.59 1032.39 129.605C949.41 46.6204 836.858 8.86031e-06 719.5 0C602.142 -8.8603e-06 489.59 46.6204 406.605 129.605C323.62 212.59 277 325.142 277 442.5L719.5 442.5H1162Z" fill="url(#paint0_linear_78_83)"/>
+<path d="M1162 442.5C1162 325.142 1115.38 212.59 1032.39 129.605C949.41 46.6204 836.858 8.86031e-06 719.5 0C602.142 -8.8603e-06 489.59 46.6204 406.605 129.605C323.62 212.59 277 325.142 277 442.5L719.5 442.5H1162Z" stroke="url(#paint1_linear_78_83)"/>
+</g>
+<rect width="1440" height="720" fill="url(#paint2_linear_78_83)"/>
+<defs>
+<filter id="filter0_i_78_83" x="277" y="0" width="887" height="442.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="44" operator="dilate" in="SourceAlpha" result="effect1_innerShadow_78_83"/>
+<feOffset dx="2"/>
+<feGaussianBlur stdDeviation="50"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.628926 0 0 0 0 0.595192 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_78_83"/>
+</filter>
+<linearGradient id="paint0_linear_78_83" x1="719.5" y1="0" x2="719.5" y2="885" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_78_83" x1="1021.5" y1="1180" x2="605.579" y2="-2572.38" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-color="#A098FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_78_83" x1="720" y1="-410.979" x2="720" y2="393.357" gradientUnits="userSpaceOnUse">
+<stop offset="0.737718" stop-opacity="0"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>

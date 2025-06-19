@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2)
+    format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Recoleta Regular";
+  src: url(https://nmanumr.com/fonts/Recoleta-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-image: url("../public/bg.png");
+  background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+}
+.text-accent {
+  color: #a098ff;
+}
+.font-product-sans {
+  font-family: "Product Sans", sans-serif;
+}
+.font-recoleta {
+  font-family: "Recoleta Regular", serif;
+}
+.bg-accent {
+  background: #a098ff;
+}
