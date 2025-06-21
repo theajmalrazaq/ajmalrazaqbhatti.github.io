@@ -28,125 +28,166 @@
   <body class="bg-black">
     <header class="w-full flex justify-center">
       <nav
-        class="bg-white/5 text-white rounded-2xl text-base py-2 px-7 mt-10 backdrop-blur-lg w-fit flex gap-5 h-fit fixed justify-center items-center z-99"
+        class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg sm:w-fit w-full/2 flex gap-4 fixed justify-between sm:justify-center items-center z-99"
       >
         <div>
           <a href="index.html" class="logo">
             <img
               src="public/logo.svg"
               alt="Ajmal Razaq Bhatti Logo"
-              class="logo-image w-6"
+              class="logo-image w-5 sm:w-6"
             />
           </a>
         </div>
 
-        <div>
-          <ul class="flex gap-3 bg-black/10 p-2 rounded-full">
+        <div class="sm:hidden flex justify-center items-center">
+          <ul class="flex gap-1 sm:gap-3 bg-black/10 p-1 sm:p-2 rounded-full">
             <li>
               <a
                 href="https://example.com/page1"
-                class="bg-white/5 flex justify-center items-center px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://example.com/page1"
-                class="bg-white/5 flex justify-center items-center px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://example.com/page1"
-                class="bg-white/5 flex justify-center items-center px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://example.com/page1"
-                class="bg-accent flex justify-center items-center px-5 py-2 rounded-full hover:bg-white/20 transition-colors"
-                >Shorts</a
+                class="bg-white/5 flex justify-center items-center px-2 py-1 rounded-full hover:bg-white/20 transition-colors"
+                >Menu</a
               >
             </li>
           </ul>
         </div>
-        <div class="w-0.5 bg-black/20"></div>
-        <div class="flex justify-center items-center">
-          <ul class="flex gap-4">
-            <li>
-              <a href="https://example.com/page1"
-                ><img src="public/assets/icons/figma.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://example.com/page1"
-                ><img src="public/assets/icons/github.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://example.com/page1"
-                ><img src="public/assets/icons/linkedin.svg" alt=""
-              /></a>
-            </li>
-          </ul>
+
+        <div class="sm:flex justify-center items-center gap-2 sm:gap-4 hidden">
+          <div>
+            <ul class="flex gap-1 sm:gap-3 bg-black/10 p-1 sm:p-2 rounded-full">
+              <li>
+                <a
+                  href="https://example.com/page1"
+                  class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://example.com/page1"
+                  class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://example.com/page1"
+                  class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://example.com/page1"
+                  class="bg-accent flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
+                  >Shorts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center items-center">
+            <ul class="flex gap-2 sm:gap-4">
+              <li>
+                <a href="https://example.com/page1"
+                  ><img
+                    src="public/assets/icons/figma.svg"
+                    alt=""
+                    class="w-4 sm:w-auto"
+                /></a>
+              </li>
+              <li>
+                <a href="https://example.com/page1"
+                  ><img
+                    src="public/assets/icons/github.svg"
+                    alt=""
+                    class="w-4 sm:w-auto"
+                /></a>
+              </li>
+              <li>
+                <a href="https://example.com/page1"
+                  ><img
+                    src="public/assets/icons/linkedin.svg"
+                    alt=""
+                    class="w-4 sm:w-auto"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
       <div
-        class="h-lvh flex flex-col-reverse md:flex-row items-center w-full justify-around"
+        class="h-lvh flex flex-col-reverse md:flex-row items-center w-full justify-around px-4 sm:px-6 lg:px-10"
       >
-        <div class="flex flex-col items-start w-full md:w-2/5 p-5">
+        <div
+          class="flex flex-col items-start w-full sm:w-4/5 md:w-2/5 p-3 sm:p-5"
+        >
           <h1
-            class="md:text-7xl text-4xl text-white text-accent font-recoleta devname"
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white text-accent font-recoleta devname"
           >
-            <span class="text-white text-2xl greet"> i'm </span>
+            <span class="text-white text-xl sm:text-2xl greet"> i'm </span>
             Ajmal Razaq
           </h1>
-          <p class="text-white/70 font-mono mt-2 text-sm">
+          <p class="text-white/70 font-mono mt-1 sm:mt-2 text-xs sm:text-sm">
             Frontend Developer & Junior Product Designer
           </p>
-          <p class="text-[#707070] mt-4 font-product-sans">
+          <p
+            class="text-[#707070] mt-2 sm:mt-4 font-product-sans text-sm sm:text-base"
+          >
             A wizard who loves design and code. I tell stories through my
             designs. I spend most of my time designing for brands and creating
             design resources and tools. And now, making my own game.
           </p>
-          <div class="mt-5 flex gap-3">
+          <div class="mt-3 sm:mt-5 flex gap-2 sm:gap-3">
             <button
-              class="bg-gradient-to-r from-[rgba(197,152,255,28%)] to-black/0 rounded-full px-6 py-3 text-white shadow-inner shadow-white/5"
+              class="bg-gradient-to-r from-[rgba(197,152,255,28%)] to-black/0 rounded-full px-4 sm:px-6 py-2 sm:py-3 text-white shadow-inner shadow-white/5 text-sm sm:text-base"
             >
               Let's Build
             </button>
-            <button class="text-white">More About Me!!</button>
+            <button class="text-white text-sm sm:text-base">
+              More About Me!!
+            </button>
           </div>
         </div>
-        <div><img src="public/logoBig.svg" alt="" class="logobig" /></div>
+        <div
+          class="sm:w-full md:w-3/5 lg:w-2/5 w-full flex justify-center items-center"
+        >
+          <img
+            src="public/logoBig.svg"
+            alt=""
+            class="logobig w-full sm:w-auto"
+          />
+        </div>
       </div>
     </header>
-    <div class="w-full relative mt-14">
-      <img src="public/eclipse.png" alt="" class="absolute -top-30" />
-      <div class="flex items-center justify-center w-full flex-col gap-5">
+    <div class="w-full relative mt-8 sm:mt-14">
+      <img src="public/eclipse.png" alt="" class="absolute -top-30 w-full" />
+      <div
+        class="flex items-center justify-center w-full flex-col gap-3 sm:gap-5 px-4 sm:px-0"
+      >
         <div class="relative w-full flex items-center justify-center">
-          <img src="public/Build.svg" alt="" class="absolute" />
-          <h1 class="text-white text-5xl -top-2 z-10 absolute font-recoleta">
-            Let’s <span class="text-accent">build </span> something together.
+          <img src="public/Build.svg" alt="" class="absolute w-3/4 sm:w-auto" />
+          <h1
+            class="text-white text-3xl sm:text-4xl md:text-5xl -top-2 z-10 absolute font-recoleta text-center px-2"
+          >
+            Let's <span class="text-accent">build </span> something together.
           </h1>
         </div>
         <div class="mt-4 z-10">
-          <p class="text-white/70 text-base font-product-sans mt-4 text-center">
+          <p
+            class="text-white/70 text-sm sm:text-base font-product-sans mt-4 text-center px-4 sm:px-0"
+          >
             My focus lies in
             <span class="text-accent"
-              >UI/UX Design,branding, and web development</span
+              >UI/UX Design, branding, and web development</span
             >
-            <br />
-            No matter the industry, I’d love to talk with you and see how we
-            could create <br />
+            <br class="hidden sm:block" />
+            No matter the industry, I'd love to talk with you and see how we
+            could create <br class="hidden sm:block" />
             something wonderful.
           </p>
         </div>
       </div>
     </div>
-    <div class="box bg-white w-10 h-10" id="box">Hope</div>
   </body>
 </html>
