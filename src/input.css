@@ -15,9 +15,10 @@
   font-display: swap;
 }
 
-body {
+header {
   background-image: url("../public/bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 * {
   box-sizing: border-box;
@@ -33,4 +34,44 @@ body {
 }
 .bg-accent {
   background: #a098ff;
+}
+.shadow-accent {
+  background: rgba(160, 152, 255, 0.06);
+  box-shadow: 0px 0px 39px -22px #a098ff inset;
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+  transition: all 0.3s ease-in-out;
+}
+
+.shadow-accent:hover {
+  background: rgba(160, 152, 255, 0.06);
+  box-shadow: 0px 0px 45px -22px #a098ff inset;
+  border-color: #a098ff;
+}
+
+/* Lenis smooth scroll styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+/* Optimize scrolling performance */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0px 0px 39px -22px #a098ff inset;
+  }
+  100% {
+    box-shadow: 0px 0px 39px -px #a098ff inset;
+  }
 }
