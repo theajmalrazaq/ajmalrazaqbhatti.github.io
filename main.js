@@ -1,7 +1,3 @@
-import {
-  animate,
-  createSpring,
-} from "https://cdn.jsdelivr.net/npm/animejs/+esm";
 import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.1.14/+esm";
 
 // Initialize Lenis smooth scroll
@@ -25,12 +21,25 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// Stop scroll propagation for lottie players
-document.addEventListener("DOMContentLoaded", () => {
-  const lottiePlayer = document.querySelectorAll("lottie-player");
-  lottiePlayer.forEach((player) => {
-    player.addEventListener("wheel", (e) => {
-      e.stopPropagation();
-    });
+// Initialize AOS animations
+AOS.init({
+  duration: 800,
+  easing: "ease",
+  once: false,
+  mirror: false,
+  anchorPlacement: "top-bottom",
+});
+
+lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
+  const parallaxElements = document.querySelectorAll(".parallax");
+  parallaxElements.forEach((element) => {
+    const speed = element.dataset.speed || 0.2;
+    const yPos = -scroll * speed;
+    element.style.transform = `translateY(${yPos}px)`;
   });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  lucide.createIcons();
+  AOS.refresh();
 });

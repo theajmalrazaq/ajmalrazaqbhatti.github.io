@@ -2,6 +2,7 @@
 <html lang="en" class="lenis lenis--smooth select-none">
   <head>
     <link href="src/output.css" rel="stylesheet" />
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <link
       rel="apple-touch-icon"
@@ -23,6 +24,7 @@
     <link rel="manifest" href="public/assets/favicon/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="main.js"></script>
     <title>Ajmal Razaq Bhatti</title>
   </head>
@@ -50,6 +52,8 @@
       </lottie-player>
       <nav
         class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg sm:w-fit w-full/2 flex gap-4 fixed justify-between sm:justify-center items-center z-99"
+        data-aos="fade-down"
+        data-aos-delay="100"
       >
         <div>
           <a href="index.html" class="logo">
@@ -57,6 +61,8 @@
               src="public/logo.svg"
               alt="Ajmal Razaq Bhatti Logo"
               class="logo-image w-10"
+              data-rotate
+              data-speed="0.2"
             />
           </a>
         </div>
@@ -76,28 +82,28 @@
         <div class="sm:flex justify-center items-center gap-2 sm:gap-4 hidden">
           <div>
             <ul class="flex gap-1 sm:gap-3 bg-black/10 p-1 sm:p-2 rounded-full">
-              <li>
+              <li data-aos="fade-right" data-aos-delay="100">
                 <a
                   href="https://example.com/page1"
                   class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >About</a
                 >
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-delay="200">
                 <a
                   href="https://example.com/page1"
                   class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >Projects</a
                 >
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-delay="300">
                 <a
                   href="https://example.com/page1"
                   class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >Blogs</a
                 >
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-delay="400">
                 <a
                   href="https://example.com/page1"
                   class="bg-accent flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
@@ -108,7 +114,7 @@
           </div>
           <div class="flex justify-center items-center">
             <ul class="flex gap-2 sm:gap-4">
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="200">
                 <a href="https://example.com/page1"
                   ><img
                     src="public/assets/icons/figma.svg"
@@ -116,7 +122,7 @@
                     class="w-4 sm:w-auto"
                 /></a>
               </li>
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="300">
                 <a href="https://example.com/page1"
                   ><img
                     src="public/assets/icons/github.svg"
@@ -124,7 +130,7 @@
                     class="w-4 sm:w-auto"
                 /></a>
               </li>
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="400">
                 <a href="https://example.com/page1"
                   ><img
                     src="public/assets/icons/linkedin.svg"
@@ -141,9 +147,16 @@
         class="flex flex-col items-center w-full justify-center relative z-10"
       >
         <div class="flex flex-col gap-4 items-center justify-center mt-10">
-          <img src="public/dev.svg" alt="" class="logobig max-w-52" />
+          <img
+            src="public/dev.svg"
+            alt=""
+            class="logobig max-w-52"
+            data-aos="zoom-in"
+            data-speed="0.5"
+          />
           <h1
-            class="text-4xl md:text-5xl lg:text-7xl text-transparent font-recoleta devname bg-clip-text"
+            class="text-4xl p-2 md:text-5xl lg:text-7xl text-transparent font-recoleta devname bg-clip-text"
+            data-aos="fade-up"
             style="
               background-image: linear-gradient(
                 0deg,
@@ -156,32 +169,48 @@
           </h1>
         </div>
         <div class="flex flex-col gap-5 items-center justify-center mt-2">
-          <p class="text-accent">Research | Design | Code</p>
+          <p class="text-accent" data-aos="fade-up" data-aos-delay="100">
+            Research | Design | Code
+          </p>
           <p
             class="mt-2 sm:mt-4 font-product-sans sm:text-base text-sm w-full text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20 font-bold"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            I craft high-impact websites that help convert smarter,
+            Designer? Developer? Why not both. I take ideas from "meh" to "whoa"
             <br />
-            earn more, and rise above the noise.
+            - designing sleek interfaces and coding fast, responsive websites
+            that actually convert.
+            <br />
           </p>
 
           <button
-            class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105"
+            class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center gap-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
             Let's Talk
           </button>
         </div>
       </div>
     </header>
-    <div class="w-full relative mt-8 sm:mt-14 z-30">
-      <img src="public/eclipse.png" alt="" class="absolute -top-30 w-full" />
+    <div class="w-full relative mt-8 sm:mt-14">
+      <img src="public/cool 1.png" alt="" class="absolute -top-20 w-full" />
       <div
         class="flex items-center justify-center w-full flex-col gap-3 sm:gap-5 px-4 sm:px-0"
       >
         <div class="relative w-full flex items-center justify-center">
-          <img src="public/build.svg" alt="" class="absolute w-3/4 sm:w-auto" />
+          <img
+            src="public/build.svg"
+            alt=""
+            class="absolute w-3/5 sm:w-auto"
+            data-rotate
+            data-speed="0.3"
+          />
           <h1
             class="text-white text-2xl sm:text-4xl md:text-5xl -top-2 z-10 absolute font-recoleta text-center"
+            data-aos="fade-up"
           >
             Let's <span class="text-accent">build </span> something together.
           </h1>
@@ -189,6 +218,7 @@
         <div class="mt-4 z-10 flex flex-col items-center justify-center gap-4">
           <p
             class="text-white/70 text-sm sm:text-base font-product-sans mt-4 text-center px-4 sm:px-0"
+            data-aos="fade-right"
           >
             My focus lies in
             <span class="text-accent"
@@ -200,12 +230,53 @@
             something wonderful.
           </p>
           <button
-            class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105"
+            class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center gap-2"
+            data-aos="fade-left"
           >
-            Let's Build Together.
+            <i data-lucide="rocket" class="w-4 h-4"></i>
+            Let's Build Together
           </button>
         </div>
       </div>
     </div>
+
+    <!-- Projects Section  -->
+    <div class="z-99 relative mt-40 flex items-center justify-center">
+      <img
+        src="public/featured_projects.svg"
+        alt=""
+        class="absolute -top-20 w-3/4 sm:w-1/3"
+        data-rotate
+        data-speed="0.3"
+      />
+      <h1
+        class="text-white text-2xl sm:text-4xl md:text-5xl -top-2 z-10 absolute font-recoleta text-center"
+        data-aos="fade-up"
+      >
+        <span class="text-accent">Projects</span> that I've worked on.
+      </h1>
+      <div class="mt-6 z-10 flex flex-col items-center justify-center gap-4">
+        <p
+          class="text-white/70 text-sm sm:text-base font-product-sans mt-4 text-center px-4 sm:px-0"
+          data-aos="fade-up"
+        >
+          Here’s a collection of work where I turned pain points into purposeful
+          products through <br />
+          <span class="text-accent"
+            >careful research, intuitive design, and scalable development.</span
+          >
+        </p>
+        <button
+          class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 scroll-slide-in delayed-animation from-right flex items-center gap-2"
+        >
+          <i data-lucide="github" class="w-4 h-4"></i>
+          Explore On GitHub
+        </button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
