@@ -51,9 +51,7 @@
       >
       </lottie-player>
       <nav
-        class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg sm:w-fit w-full/2 flex gap-4 fixed justify-between sm:justify-center items-center z-99"
-        data-aos="fade-down"
-        data-aos-delay="100"
+        class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg sm:w-fit w-full/2 flex gap-4 fixed justify-between sm:justify-center items-center z-99 text-normal bottom-5"
       >
         <div>
           <a href="index.html" class="logo">
@@ -82,28 +80,28 @@
         <div class="sm:flex justify-center items-center gap-2 sm:gap-4 hidden">
           <div>
             <ul class="flex gap-1 sm:gap-3 bg-black/10 p-1 sm:p-2 rounded-full">
-              <li data-aos="fade-right" data-aos-delay="100">
+              <li>
                 <a
                   href="https://example.com/page1"
                   class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >About</a
                 >
               </li>
-              <li data-aos="fade-right" data-aos-delay="200">
+              <li>
                 <a
                   href="https://example.com/page1"
                   class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >Projects</a
                 >
               </li>
-              <li data-aos="fade-right" data-aos-delay="300">
+              <li>
                 <a
                   href="https://example.com/page1"
                   class="bg-white/5 flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >Blogs</a
                 >
               </li>
-              <li data-aos="fade-right" data-aos-delay="400">
+              <li>
                 <a
                   href="https://example.com/page1"
                   class="bg-accent flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
@@ -112,50 +110,36 @@
               </li>
             </ul>
           </div>
-          <div class="flex justify-center items-center">
-            <ul class="flex gap-2 sm:gap-4">
-              <li data-aos="zoom-in" data-aos-delay="200">
-                <a href="https://example.com/page1"
-                  ><img
-                    src="public/assets/icons/figma.svg"
-                    alt=""
-                    class="w-4 sm:w-auto"
-                /></a>
-              </li>
-              <li data-aos="zoom-in" data-aos-delay="300">
-                <a href="https://example.com/page1"
-                  ><img
-                    src="public/assets/icons/github.svg"
-                    alt=""
-                    class="w-4 sm:w-auto"
-                /></a>
-              </li>
-              <li data-aos="zoom-in" data-aos-delay="400">
-                <a href="https://example.com/page1"
-                  ><img
-                    src="public/assets/icons/linkedin.svg"
-                    alt=""
-                    class="w-4 sm:w-auto"
-                /></a>
-              </li>
-            </ul>
-          </div>
+          <div class="flex justify-center items-center"></div>
         </div>
       </nav>
 
-      <div
-        class="flex flex-col items-center w-full justify-center relative z-10"
-      >
+      <div class="flex flex-col items-center w-full relative z-10">
+        <div
+          class="bg-gradient-to-r from-white/10 to-white/5 text-white rounded-full px-4 py-2 mt-7 sm:w-fit w-full/2 flex items-center gap-3 text-sm transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:scale-105 cursor-pointer group border border-white/10 backdrop-blur-lg"
+        >
+          <div class="relative flex items-center justify-center">
+            <div class="h-2 w-2 bg-green-500 rounded-full"></div>
+            <div
+              class="h-3 w-3 bg-green-400/30 rounded-full animate-ping absolute"
+            ></div>
+          </div>
+          <!-- <i
+            data-lucide="briefcase"
+            class="w-4 h-4 text-green-600 group-hover:rotate-12 transition-transform animate-pulse"
+          ></i> -->
+          <span class="font-base">Open For New Opportunities</span>
+        </div>
         <div class="flex flex-col gap-4 items-center justify-center mt-10">
           <img
             src="public/dev.svg"
             alt=""
-            class="logobig max-w-52"
+            class="logobig max-w-42"
             data-aos="zoom-in"
             data-speed="0.5"
           />
           <h1
-            class="text-4xl p-2 md:text-5xl lg:text-7xl text-transparent font-recoleta devname bg-clip-text"
+            class="sm:text-5xl text-4xl p-2 text-transparent font-recoleta devname bg-clip-text"
             data-aos="fade-up"
             style="
               background-image: linear-gradient(
@@ -169,28 +153,64 @@
           </h1>
         </div>
         <div class="flex flex-col gap-5 items-center justify-center mt-2">
-          <p class="text-accent" data-aos="fade-up" data-aos-delay="100">
-            Research | Design | Code
-          </p>
+          <div class="flex items-center justify-center gap-4 mt-2 text-accent">
+            <a
+              href="https://github.com/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
+            >
+              <span>GitHub</span>
+            </a>
+            /
+            <a
+              href="https://linkedin.com/in/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
+            >
+              <span>LinkedIn</span>
+            </a>
+            /
+            <a
+              href="https://x.com/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
+            >
+              <span>X</span>
+            </a>
+            /
+            <a
+              href="https://behance.net/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
+            >
+              <span>Behance</span>
+            </a>
+          </div>
           <p
-            class="mt-2 sm:mt-4 font-product-sans sm:text-base text-sm w-full text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20 font-bold"
+            class="font-product-sans text-sm text-center sm:w-3/4 text-white/90"
             data-aos="fade-up"
             data-aos-delay="200"
+            data-aos-duration="800"
           >
             Designer? Developer? Why not both. I take ideas from "meh" to "whoa"
-            <br />
-            - designing sleek interfaces and coding fast, responsive websites
-            that actually convert.
-            <br />
+            designing sleek interfaces and coding fast, responsive websites that
+            actually convert.
           </p>
-
           <button
-            class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center gap-2"
+            class="bg-gradient-to-r to-black/0 rounded-full py-1 pr-1 pl-4 text-white shadow-accent text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center justify-between gap-2"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <i data-lucide="message-circle" class="w-4 h-4"></i>
             Let's Talk
+            <div
+              class="bg-gradient-to-r to-black/0 p-3 text-white shadow-accent rounded-full flex items-center justify-center"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
+            </div>
           </button>
         </div>
       </div>

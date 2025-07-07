@@ -15,8 +15,8 @@
   font-display: swap;
 }
 
-header {
-  background-image: url("../public/bg.png");
+body {
+  background-image: url("../public/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
