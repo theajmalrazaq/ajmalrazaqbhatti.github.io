@@ -35,8 +35,8 @@
       <lottie-player
         src="public/up.json"
         background="transparent"
-        class="absolute right-0 -top-20 h-1/2 sm:top-10 w-64 sm:w-auto z-10"
-        speed="0.1"
+        class="absolute right-0 -top-25 h-1/2 sm:top-10 w-64 sm:w-auto z-10"
+        speed="0.3"
         loop
         autoplay
       >
@@ -44,14 +44,249 @@
       <lottie-player
         src="public/down.json"
         background="transparent"
-        class="absolute left-0 bottom-60 sm:bottom-10 h-1/2 w-64 sm:w-auto z-10"
-        speed="0.2"
+        class="absolute left-0 -top-25 sm:top-10 h-1/2 w-64 sm:w-auto z-10"
+        speed="0.3"
         loop
         autoplay
       >
       </lottie-player>
+
       <nav
-        class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg sm:w-fit w-full/2 flex gap-4 fixed justify-between sm:justify-center items-center z-99 text-normal bottom-5"
+        class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg w-11/12 gap-2 fixed justify-between items-center z-99 text-normal top-0 sm:hidden flex"
+      >
+        <div>
+          <a href="index.html" class="logo">
+            <img
+              src="public/logo.svg"
+              alt="Ajmal Razaq Bhatti Logo"
+              class="logo-image w-10"
+              data-rotate
+              data-speed="0.2"
+            />
+          </a>
+        </div>
+
+        <div class="sm:hidden flex justify-center items-center">
+          <ul class="flex gap-1 sm:gap-3 bg-black/10 p-1 sm:p-2 rounded-full">
+            <li>
+              <a
+                href="https://example.com/page1"
+                class="bg-white/5 flex justify-center items-center px-2 py-1 rounded-full hover:bg-white/20 transition-colors"
+                >Menu</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="flex flex-col items-center w-full relative z-10">
+        <div
+          class="sm:mt-4 mt-27 flex items-center justify-center rounded-full py-2 px-3 text-center backdrop-blur-md border border-white/10 glow-sm bg-accent-light text-white/90 transition-all duration-300 ease-in-out cursor-pointer"
+        >
+          <div
+            class="relative mr-2.5 flex h-3.5 w-3.5 items-center justify-center"
+          >
+            <div class="h-2.5 w-2.5 rounded-full bg-purple-400 glow-sm"></div>
+            <div
+              class="absolute h-full w-full animate-ping rounded-full bg-purple-400 opacity-60"
+            ></div>
+          </div>
+          <p class="sm:text-sm text-xs">Available For New Opportunities</p>
+        </div>
+        <div class="flex flex-col gap-2 items-center justify-center mt-4">
+          <div>
+            <img
+              src="public/dev.svg"
+              alt=""
+              class="logobig max-w-45"
+              data-aos="zoom-in"
+              data-speed="0.5"
+            />
+          </div>
+          <h1
+            class="sm:text-5xl text-4xl p-2 text-transparent font-recoleta devname bg-clip-text"
+            data-aos="fade-up"
+            style="
+              background-image: linear-gradient(
+                0deg,
+                rgb(198, 200, 255) 50%,
+                #a098ff 100%
+              );
+            "
+          >
+            Ajmal Razaq Bhatti
+          </h1>
+        </div>
+        <div
+          class="flex flex-col gap-5 items-center justify-center mt-2"
+          data-aos="fade-up"
+        >
+          <div class="flex items-center justify-center gap-2 mt-2 text-accent">
+            <a
+              href="https://github.com/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 bg-white/5 px-2 py-1 rounded-full border border-white/10 glow-s hover:shadow-lg hover:bg-[#a098ff] transition-all duration-400"
+            >
+              <span>GitHub</span>
+            </a>
+            /
+            <a
+              href="https://linkedin.com/in/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 bg-white/5 px-2 py-1 rounded-full border border-white/10 glow-s hover:shadow-lg hover:bg-[#a098ff] transition-all duration-400"
+            >
+              <span>LinkedIn</span>
+            </a>
+            /
+            <a
+              href="https://x.com/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 bg-white/5 px-2 py-1 rounded-full border border-white/10 glow-s hover:shadow-lg hover:bg-[#a098ff] transition-all duration-400"
+            >
+              <span>X</span>
+            </a>
+            /
+            <a
+              href="https://behance.net/theajmalrazaq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/70 hover:text-accent flex items-center gap-1 bg-white/5 px-2 py-1 rounded-full border border-white/10 glow-s hover:shadow-lg hover:bg-[#a098ff] transition-all duration-400"
+            >
+              <span>Behance</span>
+            </a>
+          </div>
+          <p
+            class="font-product-sans text-sm text-center sm:w-3/4 text-white/90"
+            data-aos="fade-up"
+          >
+            Designer? Developer? Why not both. I take ideas from "meh" to "whoa"
+            designing sleek interfaces and coding fast, responsive websites that
+            actually convert.
+          </p>
+          <button
+            class="bg-gradient-to-r to-black/0 rounded-full py-1 pr-1 pl-4 text-white shadow-accent-animate text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center justify-between gap-2"
+            data-aos="fade-up"
+          >
+            Let's Talk
+            <div
+              class="bg-gradient-to-r to-black/0 p-3 text-white shadow-accent rounded-full flex items-center justify-center"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="w-full relative mt-8 sm:mt-14">
+      <img
+        src="public/eclipse 2.svg"
+        alt=""
+        class="absolute -top-50 w-full -z-10"
+      />
+      <div
+        class="flex items-center justify-center w-full flex-col gap-3 sm:gap-5 px-4 sm:px-0"
+      >
+        <div class="relative w-full flex items-center justify-center">
+          <img
+            src="public/build.svg"
+            alt=""
+            class="absolute w-3/5 sm:w-auto"
+            data-rotate
+            data-speed="0.3"
+            data-aos="fade-up"
+          />
+          <h1
+            class="text-white text-2xl sm:text-4xl md:text-5xl -top-2 z-10 absolute font-recoleta text-center"
+            data-aos="fade-up"
+          >
+            Let's <span class="text-accent">build </span> something together.
+          </h1>
+        </div>
+        <div
+          class="sm:mt-6 mt-4 z-10 flex flex-col items-center justify-center gap-4 w-full"
+        >
+          <p
+            class="font-product-sans text-sm text-center text-white/90"
+            data-aos="fade-up"
+          >
+            My focus lies in
+            <span class="text-accent"
+              >UI/UX Design, branding, and web development</span
+            >
+            <br class="hidden sm:block" />
+            No matter the industry, I'd love to talk with you and see how we
+            could create <br class="hidden sm:block" />
+            something wonderful.
+          </p>
+          <button
+            class="flex gap-2 justify-center items-center text-white/80 cursor-pointer shadow-accent hover:shadow-lg bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-sm sm:text-base transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 scroll-slide-in delayed-animation from-right"
+            data-aos="fade-up"
+          >
+            <i data-lucide="rocket" class="w-4 h-4"></i>
+
+            Let's Build Together
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex items-center justify-center mt-10">
+      <div
+        class="w-[70%] h-[1px] bg-gradient-to-l from-transparent via-[#a098ff]/40 to-transparent z-99"
+      ></div>
+    </div>
+    <!-- Projects Section  -->
+    <div class="mt-6 w-full flex flex-col items-center justify-center gap-5">
+      <!-- <img
+        src="public/featured_projects.svg"
+        alt=""
+        class="absolute -top-20 w-3/4 sm:w-1/3"
+        data-rotate
+        data-speed="0.3"
+      /> -->
+      <div
+        class="relative z-10 w-fit p-4 rounded-4xl flex items-center justify-center shadow-accent"
+      >
+        <i data-lucide="folder" class="w-15 h-15 text-accent"></i>
+      </div>
+
+      <div
+        class="relative flex flex-col items-center justify-center gap-3 w-full"
+      >
+        <h1
+          class="text-white text-2xl sm:text-4xl md:text-5xl font-recoleta text-center"
+          data-aos="fade-up"
+        >
+          <span class="text-accent">Projects</span> that I've worked on.
+        </h1>
+        <p
+          class="font-product-sans text-sm text-center text-white/90"
+          data-aos="fade-up"
+        >
+          Here’s a collection of work where I turned pain points into purposeful
+          products through <br />
+          <span class="text-accent"
+            >careful research, intuitive design, and scalable development.</span
+          >
+        </p>
+        <button
+          class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 scroll-slide-in delayed-animation from-right flex items-center gap-2"
+        >
+          <i data-lucide="github" class="w-4 h-4"></i>
+          Explore On GitHub
+        </button>
+        <img
+          src="public/projects.svg"
+          alt=""
+          class="w-1/3 sm:w-full absolute -top-13"
+        />
+      </div>
+    </div>
+    <footer class="flex justify-center">
+      <nav
+        class="bg-white/5 text-white rounded-2xl px-7 sm:py-1 py-4 mt-5 backdrop-blur-lg sm:w-fit w-full/2 gap-4 fixed justify-between sm:justify-center items-center z-99 text-normal bottom-5 sm:flex hidden"
       >
         <div>
           <a href="index.html" class="logo">
@@ -104,197 +339,15 @@
               <li>
                 <a
                   href="https://example.com/page1"
-                  class="bg-accent flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
+                  class="bg-[#a098ff] flex justify-center items-center px-2 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white/20 transition-colors text-xs sm:text-base"
                   >Shorts</a
                 >
               </li>
             </ul>
           </div>
-          <div class="flex justify-center items-center"></div>
         </div>
       </nav>
-
-      <div class="flex flex-col items-center w-full relative z-10">
-        <div
-          class="bg-gradient-to-r from-white/10 to-white/5 text-white rounded-full px-4 py-2 mt-7 sm:w-fit w-full/2 flex items-center gap-3 text-sm transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:scale-105 cursor-pointer group border border-white/10 backdrop-blur-lg"
-        >
-          <div class="relative flex items-center justify-center">
-            <div class="h-2 w-2 bg-green-500 rounded-full"></div>
-            <div
-              class="h-3 w-3 bg-green-400/30 rounded-full animate-ping absolute"
-            ></div>
-          </div>
-          <!-- <i
-            data-lucide="briefcase"
-            class="w-4 h-4 text-green-600 group-hover:rotate-12 transition-transform animate-pulse"
-          ></i> -->
-          <span class="font-base">Open For New Opportunities</span>
-        </div>
-        <div class="flex flex-col gap-4 items-center justify-center mt-10">
-          <img
-            src="public/dev.svg"
-            alt=""
-            class="logobig max-w-42"
-            data-aos="zoom-in"
-            data-speed="0.5"
-          />
-          <h1
-            class="sm:text-5xl text-4xl p-2 text-transparent font-recoleta devname bg-clip-text"
-            data-aos="fade-up"
-            style="
-              background-image: linear-gradient(
-                0deg,
-                rgb(198, 200, 255) 50%,
-                #a098ff 100%
-              );
-            "
-          >
-            Ajmal Razaq Bhatti
-          </h1>
-        </div>
-        <div class="flex flex-col gap-5 items-center justify-center mt-2">
-          <div class="flex items-center justify-center gap-4 mt-2 text-accent">
-            <a
-              href="https://github.com/theajmalrazaq"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
-            >
-              <span>GitHub</span>
-            </a>
-            /
-            <a
-              href="https://linkedin.com/in/theajmalrazaq"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
-            >
-              <span>LinkedIn</span>
-            </a>
-            /
-            <a
-              href="https://x.com/theajmalrazaq"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
-            >
-              <span>X</span>
-            </a>
-            /
-            <a
-              href="https://behance.net/theajmalrazaq"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white/70 hover:text-accent flex items-center gap-1 transition-colors duration-300"
-            >
-              <span>Behance</span>
-            </a>
-          </div>
-          <p
-            class="font-product-sans text-sm text-center sm:w-3/4 text-white/90"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-          >
-            Designer? Developer? Why not both. I take ideas from "meh" to "whoa"
-            designing sleek interfaces and coding fast, responsive websites that
-            actually convert.
-          </p>
-          <button
-            class="bg-gradient-to-r to-black/0 rounded-full py-1 pr-1 pl-4 text-white shadow-accent text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center justify-between gap-2"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            Let's Talk
-            <div
-              class="bg-gradient-to-r to-black/0 p-3 text-white shadow-accent rounded-full flex items-center justify-center"
-            >
-              <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
-            </div>
-          </button>
-        </div>
-      </div>
-    </header>
-    <div class="w-full relative mt-8 sm:mt-14">
-      <img src="public/cool 1.png" alt="" class="absolute -top-20 w-full" />
-      <div
-        class="flex items-center justify-center w-full flex-col gap-3 sm:gap-5 px-4 sm:px-0"
-      >
-        <div class="relative w-full flex items-center justify-center">
-          <img
-            src="public/build.svg"
-            alt=""
-            class="absolute w-3/5 sm:w-auto"
-            data-rotate
-            data-speed="0.3"
-          />
-          <h1
-            class="text-white text-2xl sm:text-4xl md:text-5xl -top-2 z-10 absolute font-recoleta text-center"
-            data-aos="fade-up"
-          >
-            Let's <span class="text-accent">build </span> something together.
-          </h1>
-        </div>
-        <div class="mt-4 z-10 flex flex-col items-center justify-center gap-4">
-          <p
-            class="text-white/70 text-sm sm:text-base font-product-sans mt-4 text-center px-4 sm:px-0"
-            data-aos="fade-right"
-          >
-            My focus lies in
-            <span class="text-accent"
-              >UI/UX Design, branding, and web development</span
-            >
-            <br class="hidden sm:block" />
-            No matter the industry, I'd love to talk with you and see how we
-            could create <br class="hidden sm:block" />
-            something wonderful.
-          </p>
-          <button
-            class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 flex items-center gap-2"
-            data-aos="fade-left"
-          >
-            <i data-lucide="rocket" class="w-4 h-4"></i>
-            Let's Build Together
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects Section  -->
-    <div class="z-99 relative mt-40 flex items-center justify-center">
-      <img
-        src="public/featured_projects.svg"
-        alt=""
-        class="absolute -top-20 w-3/4 sm:w-1/3"
-        data-rotate
-        data-speed="0.3"
-      />
-      <h1
-        class="text-white text-2xl sm:text-4xl md:text-5xl -top-2 z-10 absolute font-recoleta text-center"
-        data-aos="fade-up"
-      >
-        <span class="text-accent">Projects</span> that I've worked on.
-      </h1>
-      <div class="mt-6 z-10 flex flex-col items-center justify-center gap-4">
-        <p
-          class="text-white/70 text-sm sm:text-base font-product-sans mt-4 text-center px-4 sm:px-0"
-          data-aos="fade-up"
-        >
-          Here’s a collection of work where I turned pain points into purposeful
-          products through <br />
-          <span class="text-accent"
-            >careful research, intuitive design, and scalable development.</span
-          >
-        </p>
-        <button
-          class="bg-gradient-to-r to-black/0 rounded-full px-6 py-3 text-white shadow-accent text-sm sm:text-base cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out hover:to-black/10 hover:scale-105 scroll-slide-in delayed-animation from-right flex items-center gap-2"
-        >
-          <i data-lucide="github" class="w-4 h-4"></i>
-          Explore On GitHub
-        </button>
-      </div>
-    </div>
-
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lottie-player@latest/dist/lottie-player.js"></script>
     <script type="module" src="main.js"></script>

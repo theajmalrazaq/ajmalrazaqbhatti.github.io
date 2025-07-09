@@ -15,8 +15,8 @@
   font-display: swap;
 }
 
-body {
-  background-image: url("../public/bg2.png");
+header {
+  background-image: url("../public/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,14 +32,16 @@ body {
 .font-recoleta {
   font-family: "Recoleta Regular", serif;
 }
-.bg-accent {
-  background: #a098ff;
-}
-.shadow-accent {
-  background: rgba(160, 152, 255, 0.06);
+
+.shadow-accent-animate {
   box-shadow: 0px 0px 39px -22px #a198ff39 inset;
   animation: pulse-glow 2s ease-in-out infinite alternate;
   transition: all 0.3s ease-in-out;
+}
+.shadow-accent {
+  background: rgba(160, 152, 255, 0.06);
+  box-shadow: 0px 0px 45px -22px #a098ff inset;
+  border-color: #a098ff;
 }
 
 .shadow-accent:hover {
